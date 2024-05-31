@@ -3,26 +3,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="100dp"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/inputEditText"
+        android:id="@+id/inputEditText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/sendButton"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter text"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputEditText2"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:hint="Enter some data"
-        android:inputType="text" />
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter text"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sendButton"
-        android:layout_width="120dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send"
-        android:layout_below="@id/inputEditText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_design"
+        android:padding="16dp"
+        android:text="send "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 </RelativeLayout>
